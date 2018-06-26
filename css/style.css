@@ -1,0 +1,143 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: darkcyan;
+}
+
+a {
+    display: block;
+    color: aliceblue;
+}
+
+.logo a {
+    padding: 1em 0;
+}
+
+.navList li a {
+    padding: 0.5em 0;
+}
+
+.navList li a:hover {
+    background-color: cadetblue;
+    transition: 0.2;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: darkcyan;
+    color: aliceblue;
+}
+
+.wrap {
+    min-height: calc(100vh - 54px);
+}
+
+.banner {
+    background: url("../images/love.jpg");
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 1px 1px 1px white;
+    align-items: flex-end;
+}
+
+.move_text {
+    width: 50%;
+}
+
+
+h1,
+h2 {
+    margin: 0;
+    padding: 1em 0:
+}
+
+h2 {
+    padding: 1em;
+}
+
+.container {
+    margin: auto;
+}
+
+.col {
+    padding: 1em;
+    text-align: center;
+}
+
+.col h1 {
+    text-align: center;
+}
+
+.col p {
+    line-height: 1.4;
+}
+
+.HTML {
+
+    background-color: brown;
+}
+
+.CSS {
+    background-color: hotpink;
+}
+
+.JAVA {
+    background-color: purple;
+}
+
+/*================================ 
+媒体查询700px
+==================================== */
+
+@media (min-width:700px) {
+    body {
+        background-color: powderblue;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navList {
+        display: flex;
+    }
+    .navList li a {
+        padding: 1em 2em;
+        border-radius: 100px;
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        padding: 1em;
+    }
+    .col {
+        flex-basis: 30%;
+        flex-grow: 1;
+        border-radius: 10px;
+        margin: 0 1em;
+    }
+    .col:hover {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 1.5);
+        transition: .3s;
+        cursor: default;
+    }
+}
